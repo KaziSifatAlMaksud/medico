@@ -1,6 +1,7 @@
 /*
 ! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
-*//*
+*/
+/*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
@@ -8,10 +9,14 @@
 *,
 ::before,
 ::after {
-  box-sizing: border-box; /* 1 */
-  border-width: 0; /* 2 */
-  border-style: solid; /* 2 */
-  border-color: currentColor; /* 2 */
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: currentColor;
+  /* 2 */
 }
 
 ::before,
@@ -28,13 +33,19 @@
 */
 
 html {
-  line-height: 1.5; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-  -moz-tab-size: 4; /* 3 */
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
   -o-tab-size: 4;
-     tab-size: 4; /* 3 */
-  font-family: Inter, sans-serif; /* 4 */
-  font-feature-settings: normal; /* 5 */
+  tab-size: 4;
+  /* 3 */
+  font-family: Inter, sans-serif;
+  /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
 }
 
 /*
@@ -43,8 +54,10 @@ html {
 */
 
 body {
-  margin: 0; /* 1 */
-  line-height: inherit; /* 2 */
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
 }
 
 /*
@@ -54,9 +67,12 @@ body {
 */
 
 hr {
-  height: 0; /* 1 */
-  color: inherit; /* 2 */
-  border-top-width: 1px; /* 3 */
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
 }
 
 /*
@@ -65,7 +81,7 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 
 abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 /*
@@ -109,8 +125,10 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: ui-monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
 }
 
 /*
@@ -148,9 +166,12 @@ sup {
 */
 
 table {
-  text-indent: 0; /* 1 */
-  border-color: inherit; /* 2 */
-  border-collapse: collapse; /* 3 */
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+  border-collapse: collapse;
+  /* 3 */
 }
 
 /*
@@ -164,13 +185,20 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  font-weight: inherit; /* 1 */
-  line-height: inherit; /* 1 */
-  color: inherit; /* 1 */
-  margin: 0; /* 2 */
-  padding: 0; /* 3 */
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  color: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
 }
 
 /*
@@ -191,9 +219,11 @@ button,
 [type='button'],
 [type='reset'],
 [type='submit'] {
-  -webkit-appearance: button; /* 1 */
+  -webkit-appearance: button;
+  /* 1 */
   /* background-color: transparent; 2 */
-  background-image: none; /* 2 */
+  background-image: none;
+  /* 2 */
 }
 
 /*
@@ -235,8 +265,10 @@ Correct the cursor style of increment and decrement buttons in Safari.
 */
 
 [type='search'] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
 }
 
 /*
@@ -253,8 +285,10 @@ Remove the inner padding in Chrome and Safari on macOS.
 */
 
 ::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
 }
 
 /*
@@ -315,15 +349,20 @@ textarea {
 2. Set the default placeholder color to the user's configured gray 400 color.
 */
 
-input::-moz-placeholder, textarea::-moz-placeholder {
-  opacity: 1; /* 1 */
-  color: #9ca3af; /* 2 */
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
 }
 
 input::placeholder,
 textarea::placeholder {
-  opacity: 1; /* 1 */
-  color: #9ca3af; /* 2 */
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
 }
 
 /*
@@ -356,8 +395,10 @@ audio,
 iframe,
 embed,
 object {
-  display: block; /* 1 */
-  vertical-align: middle; /* 2 */
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
 }
 
 /*
@@ -375,7 +416,9 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
+*,
+::before,
+::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -385,16 +428,16 @@ video {
   --tw-skew-y: 0;
   --tw-scale-x: 1;
   --tw-scale-y: 1;
-  --tw-pan-x:  ;
-  --tw-pan-y:  ;
-  --tw-pinch-zoom:  ;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom: ;
   --tw-scroll-snap-strictness: proximity;
-  --tw-ordinal:  ;
-  --tw-slashed-zero:  ;
-  --tw-numeric-figure:  ;
-  --tw-numeric-spacing:  ;
-  --tw-numeric-fraction:  ;
-  --tw-ring-inset:  ;
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
+  --tw-numeric-figure: ;
+  --tw-numeric-spacing: ;
+  --tw-numeric-fraction: ;
+  --tw-ring-inset: ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
   --tw-ring-color: rgb(59 130 246 / 0.5);
@@ -402,24 +445,24 @@ video {
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
   --tw-shadow-colored: 0 0 #0000;
-  --tw-blur:  ;
-  --tw-bleftness:  ;
-  --tw-contrast:  ;
-  --tw-grayscale:  ;
-  --tw-hue-rotate:  ;
-  --tw-invert:  ;
-  --tw-saturate:  ;
-  --tw-sepia:  ;
-  --tw-drop-shadow:  ;
-  --tw-backdrop-blur:  ;
-  --tw-backdrop-bleftness:  ;
-  --tw-backdrop-contrast:  ;
-  --tw-backdrop-grayscale:  ;
-  --tw-backdrop-hue-rotate:  ;
-  --tw-backdrop-invert:  ;
-  --tw-backdrop-opacity:  ;
-  --tw-backdrop-saturate:  ;
-  --tw-backdrop-sepia:  ;
+  --tw-blur: ;
+  --tw-bleftness: ;
+  --tw-contrast: ;
+  --tw-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-invert: ;
+  --tw-saturate: ;
+  --tw-sepia: ;
+  --tw-drop-shadow: ;
+  --tw-backdrop-blur: ;
+  --tw-backdrop-bleftness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia: ;
 }
 
 ::backdrop {
@@ -432,16 +475,16 @@ video {
   --tw-skew-y: 0;
   --tw-scale-x: 1;
   --tw-scale-y: 1;
-  --tw-pan-x:  ;
-  --tw-pan-y:  ;
-  --tw-pinch-zoom:  ;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom: ;
   --tw-scroll-snap-strictness: proximity;
-  --tw-ordinal:  ;
-  --tw-slashed-zero:  ;
-  --tw-numeric-figure:  ;
-  --tw-numeric-spacing:  ;
-  --tw-numeric-fraction:  ;
-  --tw-ring-inset:  ;
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
+  --tw-numeric-figure: ;
+  --tw-numeric-spacing: ;
+  --tw-numeric-fraction: ;
+  --tw-ring-inset: ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
   --tw-ring-color: rgb(59 130 246 / 0.5);
@@ -449,24 +492,24 @@ video {
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
   --tw-shadow-colored: 0 0 #0000;
-  --tw-blur:  ;
-  --tw-bleftness:  ;
-  --tw-contrast:  ;
-  --tw-grayscale:  ;
-  --tw-hue-rotate:  ;
-  --tw-invert:  ;
-  --tw-saturate:  ;
-  --tw-sepia:  ;
-  --tw-drop-shadow:  ;
-  --tw-backdrop-blur:  ;
-  --tw-backdrop-bleftness:  ;
-  --tw-backdrop-contrast:  ;
-  --tw-backdrop-grayscale:  ;
-  --tw-backdrop-hue-rotate:  ;
-  --tw-backdrop-invert:  ;
-  --tw-backdrop-opacity:  ;
-  --tw-backdrop-saturate:  ;
-  --tw-backdrop-sepia:  ;
+  --tw-blur: ;
+  --tw-bleftness: ;
+  --tw-contrast: ;
+  --tw-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-invert: ;
+  --tw-saturate: ;
+  --tw-sepia: ;
+  --tw-drop-shadow: ;
+  --tw-backdrop-blur: ;
+  --tw-backdrop-bleftness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia: ;
 }
 
 .container {
@@ -623,11 +666,14 @@ video {
   box-shadow: none;
 }
 
+
+
+
 .form-control::file-selector-button {
   padding: 0.375rem 0.75rem;
   margin: -0.375rem -0.75rem;
   -webkit-margin-end: 0.75rem;
-          margin-inline-end: 0.75rem;
+  margin-inline-end: 0.75rem;
   color: #212529;
   background-color: #e9ecef;
   pointer-events: none;
@@ -647,7 +693,7 @@ video {
   padding: 0.375rem 0.75rem;
   margin: -0.375rem -0.75rem;
   -webkit-margin-end: 0.75rem;
-          margin-inline-end: 0.75rem;
+  margin-inline-end: 0.75rem;
   color: rgb(55, 65, 81);
   background-color: rgb(243, 244, 246);
   pointer-events: none;
@@ -741,90 +787,90 @@ video {
   margin-left: 1rem;
 }
 
-.btn-check[disabled] + .btn {
+.btn-check[disabled]+.btn {
   pointer-events: none;
   filter: none;
   opacity: 0.65;
 }
 
-.btn-check:disabled + .btn {
+.btn-check:disabled+.btn {
   pointer-events: none;
   filter: none;
   opacity: 0.65;
 }
 
-.form-floating > .form-control {
+.form-floating>.form-control {
   height: calc(3.5rem + 2px);
   line-height: 1.25;
   padding: 1rem 0.75rem;
 }
 
-.form-floating > .form-select {
+.form-floating>.form-select {
   height: calc(3.5rem + 2px);
   line-height: 1.25;
 }
 
-.form-floating > .form-control::-moz-placeholder {
+.form-floating>.form-control::-moz-placeholder {
   color: transparent;
 }
 
-.form-floating > .form-control::placeholder {
+.form-floating>.form-control::placeholder {
   color: transparent;
 }
 
-.form-floating > .form-control:focus {
+.form-floating>.form-control:focus {
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
 }
 
-.form-floating > .form-control:not(:-moz-placeholder-shown) {
+.form-floating>.form-control:not(:-moz-placeholder-shown) {
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
 }
 
-.form-floating > .form-control:not(:placeholder-shown) {
+.form-floating>.form-control:not(:placeholder-shown) {
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
 }
 
-.form-floating > .form-control:-webkit-autofill {
+.form-floating>.form-control:-webkit-autofill {
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
 }
 
-.form-floating > .form-control:focus ~ label {
+.form-floating>.form-control:focus~label {
   opacity: 0.65;
   transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
 
-.form-floating > .form-control:not(:-moz-placeholder-shown) ~ label {
+.form-floating>.form-control:not(:-moz-placeholder-shown)~label {
   opacity: 0.65;
   transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
 
-.form-floating > .form-control:not(:placeholder-shown) ~ label {
+.form-floating>.form-control:not(:placeholder-shown)~label {
   opacity: 0.65;
   transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
 
-.form-floating > .form-select ~ label {
+.form-floating>.form-select~label {
   opacity: 0.65;
   transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
 
-.input-group > .form-control {
+.input-group>.form-control {
   width: 1%;
 }
 
-.input-group > .form-select {
+.input-group>.form-select {
   width: 1%;
 }
 
-.input-group > .form-control:focus {
+.input-group>.form-control:focus {
   z-index: 3;
 }
 
-.input-group > .form-select:focus {
+.input-group>.form-select:focus {
   z-index: 3;
 }
 
@@ -837,35 +883,35 @@ video {
   z-index: 3;
 }
 
-.input-group-lg > .form-select {
+.input-group-lg>.form-select {
   padding-left: 3rem;
 }
 
-.input-group-sm > .form-select {
+.input-group-sm>.form-select {
   padding-left: 3rem;
 }
 
-.input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+.input-group:not(.has-validation)> :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3) {
+.input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.input-group.has-validation > :nth-last-child(n+3):not(.dropdown-toggle):not(.dropdown-menu) {
+.input-group.has-validation> :nth-last-child(n+3):not(.dropdown-toggle):not(.dropdown-menu) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.input-group.has-validation > .dropdown-toggle:nth-last-child(n+4) {
+.input-group.has-validation>.dropdown-toggle:nth-last-child(n+4) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+.input-group> :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
   margin-right: -1px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -979,15 +1025,15 @@ textarea.form-control.is-valid {
   box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
 }
 
-.was-validated .form-check-input:valid ~ .form-check-label {
+.was-validated .form-check-input:valid~.form-check-label {
   color: #198754;
 }
 
-.form-check-input.is-valid ~ .form-check-label {
+.form-check-input.is-valid~.form-check-label {
   color: #198754;
 }
 
-.form-check-inline .form-check-input ~ .valid-feedback {
+.form-check-inline .form-check-input~.valid-feedback {
   margin-right: 0.5em;
 }
 
@@ -1031,15 +1077,15 @@ textarea.form-control.is-valid {
   color: #dc3545;
 }
 
-.was-validated :invalid ~ .invalid-feedback {
+.was-validated :invalid~.invalid-feedback {
   display: block;
 }
 
-.is-invalid ~ .invalid-feedback {
+.is-invalid~.invalid-feedback {
   display: block;
 }
 
-.is-invalid ~ .invalid-tooltip {
+.is-invalid~.invalid-tooltip {
   display: block;
 }
 
@@ -1151,15 +1197,15 @@ textarea.form-control.is-invalid {
   box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
 }
 
-.was-validated .form-check-input:invalid ~ .form-check-label {
+.was-validated .form-check-input:invalid~.form-check-label {
   color: #dc3545;
 }
 
-.form-check-input.is-invalid ~ .form-check-label {
+.form-check-input.is-invalid~.form-check-label {
   color: #dc3545;
 }
 
-.form-check-inline .form-check-input ~ .invalid-feedback {
+.form-check-inline .form-check-input~.invalid-feedback {
   margin-right: 0.5em;
 }
 
@@ -1195,7 +1241,7 @@ textarea.form-control.is-invalid {
   z-index: 3;
 }
 
-.btn-check:focus + .btn {
+.btn-check:focus+.btn {
   outline: 0;
   box-shadow: none;
 }
@@ -1205,11 +1251,11 @@ textarea.form-control.is-invalid {
   box-shadow: none;
 }
 
-.btn-check:checked + .btn {
+.btn-check:checked+.btn {
   box-shadow: none;
 }
 
-.btn-check:active + .btn {
+.btn-check:active+.btn {
   box-shadow: none;
 }
 
@@ -1221,11 +1267,11 @@ textarea.form-control.is-invalid {
   box-shadow: none;
 }
 
-.btn-check:checked + .btn:focus {
+.btn-check:checked+.btn:focus {
   box-shadow: none;
 }
 
-.btn-check:active + .btn:focus {
+.btn-check:active+.btn:focus {
   box-shadow: none;
 }
 
@@ -1353,7 +1399,7 @@ textarea.form-control.is-invalid {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
-.nav-pills .show > .nav-link {
+.nav-pills .show>.nav-link {
   background: rgb(37, 99, 235);
   color: #fff;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -1377,7 +1423,7 @@ textarea.form-control.is-invalid {
   border-right: 0.125rem solid #1266f1;
 }
 
-.nav-justified > .nav-link {
+.nav-justified>.nav-link {
   -ms-flex-basis: 0;
   flex-basis: 0;
 }
@@ -1387,11 +1433,11 @@ textarea.form-control.is-invalid {
   flex-basis: 0;
 }
 
-.tab-content > .tab-pane {
+.tab-content>.tab-pane {
   display: none;
 }
 
-.tab-content > .active {
+.tab-content>.active {
   display: block;
 }
 
@@ -1453,7 +1499,7 @@ textarea.form-control.is-invalid {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.navbar-light .navbar-nav .show > .nav-link {
+.navbar-light .navbar-nav .show>.nav-link {
   color: rgba(0, 0, 0, 0.9);
 }
 
@@ -1481,7 +1527,7 @@ textarea.form-control.is-invalid {
   color: rgba(255, 255, 255, 0.25);
 }
 
-.navbar-dark .navbar-nav .show > .nav-link {
+.navbar-dark .navbar-nav .show>.nav-link {
   color: #fff;
 }
 
@@ -1766,101 +1812,101 @@ textarea.form-control.is-invalid {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-.bs-popover-top > .popover-arrow {
+.bs-popover-top>.popover-arrow {
   bottom: calc(-0.5rem - 1px);
 }
 
-.bs-popover-auto[data-popper-placement^=top] > .popover-arrow {
+.bs-popover-auto[data-popper-placement^=top]>.popover-arrow {
   bottom: calc(-0.5rem - 1px);
 }
 
-.bs-popover-top > .popover-arrow::before {
+.bs-popover-top>.popover-arrow::before {
   bottom: 0;
   border-width: 0.5rem 0.5rem 0;
   border-top-color: rgba(0, 0, 0, 0.25);
 }
 
-.bs-popover-auto[data-popper-placement^=top] > .popover-arrow::before {
+.bs-popover-auto[data-popper-placement^=top]>.popover-arrow::before {
   bottom: 0;
   border-width: 0.5rem 0.5rem 0;
   border-top-color: rgba(0, 0, 0, 0.25);
 }
 
-.bs-popover-top > .popover-arrow::after {
+.bs-popover-top>.popover-arrow::after {
   bottom: 1px;
   border-width: 0.5rem 0.5rem 0;
   border-top-color: #fff;
 }
 
-.bs-popover-auto[data-popper-placement^=top] > .popover-arrow::after {
+.bs-popover-auto[data-popper-placement^=top]>.popover-arrow::after {
   bottom: 1px;
   border-width: 0.5rem 0.5rem 0;
   border-top-color: #fff;
 }
 
-.bs-popover-end > .popover-arrow {
+.bs-popover-end>.popover-arrow {
   right: calc(-0.5rem - 1px);
   width: 0.5rem;
   height: 1rem;
 }
 
-.bs-popover-auto[data-popper-placement^=left] > .popover-arrow {
+.bs-popover-auto[data-popper-placement^=left]>.popover-arrow {
   right: calc(-0.5rem - 1px);
   width: 0.5rem;
   height: 1rem;
 }
 
-.bs-popover-end > .popover-arrow::before {
+.bs-popover-end>.popover-arrow::before {
   right: 0;
   border-width: 0.5rem 0.5rem 0.5rem 0;
   border-left-color: rgba(0, 0, 0, 0.25);
 }
 
-.bs-popover-auto[data-popper-placement^=left] > .popover-arrow::before {
+.bs-popover-auto[data-popper-placement^=left]>.popover-arrow::before {
   right: 0;
   border-width: 0.5rem 0.5rem 0.5rem 0;
   border-left-color: rgba(0, 0, 0, 0.25);
 }
 
-.bs-popover-end > .popover-arrow::after {
+.bs-popover-end>.popover-arrow::after {
   right: 1px;
   border-width: 0.5rem 0.5rem 0.5rem 0;
   border-left-color: #fff;
 }
 
-.bs-popover-auto[data-popper-placement^=left] > .popover-arrow::after {
+.bs-popover-auto[data-popper-placement^=left]>.popover-arrow::after {
   right: 1px;
   border-width: 0.5rem 0.5rem 0.5rem 0;
   border-left-color: #fff;
 }
 
-.bs-popover-bottom > .popover-arrow {
+.bs-popover-bottom>.popover-arrow {
   top: calc(-0.5rem - 1px);
 }
 
-.bs-popover-auto[data-popper-placement^=bottom] > .popover-arrow {
+.bs-popover-auto[data-popper-placement^=bottom]>.popover-arrow {
   top: calc(-0.5rem - 1px);
 }
 
-.bs-popover-bottom > .popover-arrow::before {
+.bs-popover-bottom>.popover-arrow::before {
   top: 0;
   border-width: 0 0.5rem 0.5rem 0.5rem;
   border-bottom-color: rgba(0, 0, 0, 0.25);
 }
 
-.bs-popover-auto[data-popper-placement^=bottom] > .popover-arrow::before {
+.bs-popover-auto[data-popper-placement^=bottom]>.popover-arrow::before {
   top: 0;
   border-width: 0 0.5rem 0.5rem 0.5rem;
   border-bottom-color: rgba(0, 0, 0, 0.25);
 }
 
-.bs-popover-bottom > .popover-arrow::after {
+.bs-popover-bottom>.popover-arrow::after {
   top: 1px;
   border-width: 0 0.5rem 0.5rem 0.5rem;
   border-bottom-color: #fff;
 }
 
-.bs-popover-auto[data-popper-placement^=bottom] > .popover-arrow::after {
+.bs-popover-auto[data-popper-placement^=bottom]>.popover-arrow::after {
   top: 1px;
   border-width: 0 0.5rem 0.5rem 0.5rem;
   border-bottom-color: #fff;
@@ -1888,37 +1934,37 @@ textarea.form-control.is-invalid {
   border-bottom: 1px solid #f0f0f0;
 }
 
-.bs-popover-start > .popover-arrow {
+.bs-popover-start>.popover-arrow {
   left: calc(-0.5rem - 1px);
   width: 0.5rem;
   height: 1rem;
 }
 
-.bs-popover-auto[data-popper-placement^=right] > .popover-arrow {
+.bs-popover-auto[data-popper-placement^=right]>.popover-arrow {
   left: calc(-0.5rem - 1px);
   width: 0.5rem;
   height: 1rem;
 }
 
-.bs-popover-start > .popover-arrow::before {
+.bs-popover-start>.popover-arrow::before {
   left: 0;
   border-width: 0.5rem 0 0.5rem 0.5rem;
   border-right-color: rgba(0, 0, 0, 0.25);
 }
 
-.bs-popover-auto[data-popper-placement^=right] > .popover-arrow::before {
+.bs-popover-auto[data-popper-placement^=right]>.popover-arrow::before {
   left: 0;
   border-width: 0.5rem 0 0.5rem 0.5rem;
   border-right-color: rgba(0, 0, 0, 0.25);
 }
 
-.bs-popover-start > .popover-arrow::after {
+.bs-popover-start>.popover-arrow::after {
   left: 1px;
   border-width: 0.5rem 0 0.5rem 0.5rem;
   border-right-color: #fff;
 }
 
-.bs-popover-auto[data-popper-placement^=right] > .popover-arrow::after {
+.bs-popover-auto[data-popper-placement^=right]>.popover-arrow::after {
   left: 1px;
   border-width: 0.5rem 0 0.5rem 0.5rem;
   border-right-color: #fff;
@@ -1952,7 +1998,7 @@ textarea.form-control.is-invalid {
   display: none;
   margin-left: -100%;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
 }
 
@@ -2879,11 +2925,11 @@ textarea.form-control.is-invalid {
   color: #2979ff;
 }
 
-.timepicker-input:focus + .timepicker-toggle-button {
+.timepicker-input:focus+.timepicker-toggle-button {
   color: #2979ff;
 }
 
-.timepicker-input:focus + .timepicker-toggle-button i {
+.timepicker-input:focus+.timepicker-toggle-button i {
   color: #2979ff;
 }
 
@@ -3037,7 +3083,7 @@ textarea.form-control.is-invalid {
     transition: none;
   }
 
-  .form-floating > label {
+  .form-floating>label {
     transition: none;
   }
 
@@ -4673,8 +4719,8 @@ textarea.form-control.is-invalid {
 
 .appearance-none {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .grid-cols-1 {
@@ -4737,43 +4783,43 @@ textarea.form-control.is-invalid {
   gap: 2.5rem;
 }
 
-.space-x-5 > :not([hidden]) ~ :not([hidden]) {
+.space-x-5> :not([hidden])~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-left: calc(1.25rem * var(--tw-space-x-reverse));
   margin-right: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+.space-y-4> :not([hidden])~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
-.space-x-3 > :not([hidden]) ~ :not([hidden]) {
+.space-x-3> :not([hidden])~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-left: calc(0.75rem * var(--tw-space-x-reverse));
   margin-right: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-x-1 > :not([hidden]) ~ :not([hidden]) {
+.space-x-1> :not([hidden])~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-left: calc(0.25rem * var(--tw-space-x-reverse));
   margin-right: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-x-10 > :not([hidden]) ~ :not([hidden]) {
+.space-x-10> :not([hidden])~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-left: calc(2.5rem * var(--tw-space-x-reverse));
   margin-right: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-y-7 > :not([hidden]) ~ :not([hidden]) {
+.space-y-7> :not([hidden])~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
 }
 
-.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+.space-x-2> :not([hidden])~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-left: calc(0.5rem * var(--tw-space-x-reverse));
   margin-right: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
@@ -5125,7 +5171,7 @@ textarea.form-control.is-invalid {
 
 .object-cover {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .p-6 {
@@ -5739,22 +5785,22 @@ textarea.form-control.is-invalid {
 
 .ms-2 {
   -webkit-margin-start: 0.5rem;
-          margin-inline-start: 0.5rem;
+  margin-inline-start: 0.5rem;
 }
 
 .me-2 {
   -webkit-margin-end: 0.5rem;
-          margin-inline-end: 0.5rem;
+  margin-inline-end: 0.5rem;
 }
 
 .ms-4 {
   -webkit-margin-start: 1rem;
-          margin-inline-start: 1rem;
+  margin-inline-start: 1rem;
 }
 
 .ms-auto {
   -webkit-margin-start: auto;
-          margin-inline-start: auto;
+  margin-inline-start: auto;
 }
 
 [dir="rtl"] .text-end {
@@ -6158,31 +6204,31 @@ textarea.form-control.is-invalid {
     flex-wrap: wrap;
   }
 
-  .xxsm\:space-x-0 > :not([hidden]) ~ :not([hidden]) {
+  .xxsm\:space-x-0> :not([hidden])~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-left: calc(0px * var(--tw-space-x-reverse));
     margin-right: calc(0px * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .xxsm\:space-y-5 > :not([hidden]) ~ :not([hidden]) {
+  .xxsm\:space-y-5> :not([hidden])~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
   }
 
-  .xxsm\:space-y-1 > :not([hidden]) ~ :not([hidden]) {
+  .xxsm\:space-y-1> :not([hidden])~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
   }
 
-  .xxsm\:space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  .xxsm\:space-y-3> :not([hidden])~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
   }
 
-  .xxsm\:space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  .xxsm\:space-y-2> :not([hidden])~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
@@ -6463,19 +6509,19 @@ textarea.form-control.is-invalid {
     flex-direction: column;
   }
 
-  .xsm\:space-x-0 > :not([hidden]) ~ :not([hidden]) {
+  .xsm\:space-x-0> :not([hidden])~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-left: calc(0px * var(--tw-space-x-reverse));
     margin-right: calc(0px * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .xsm\:space-y-5 > :not([hidden]) ~ :not([hidden]) {
+  .xsm\:space-y-5> :not([hidden])~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
   }
 
-  .xsm\:space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  .xsm\:space-y-2> :not([hidden])~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
@@ -6730,37 +6776,37 @@ textarea.form-control.is-invalid {
     flex-direction: column;
   }
 
-  .msm\:space-y-5 > :not([hidden]) ~ :not([hidden]) {
+  .msm\:space-y-5> :not([hidden])~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
   }
 
-  .msm\:space-x-0 > :not([hidden]) ~ :not([hidden]) {
+  .msm\:space-x-0> :not([hidden])~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-left: calc(0px * var(--tw-space-x-reverse));
     margin-right: calc(0px * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .msm\:space-x-3 > :not([hidden]) ~ :not([hidden]) {
+  .msm\:space-x-3> :not([hidden])~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-left: calc(0.75rem * var(--tw-space-x-reverse));
     margin-right: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .msm\:space-x-1 > :not([hidden]) ~ :not([hidden]) {
+  .msm\:space-x-1> :not([hidden])~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-left: calc(0.25rem * var(--tw-space-x-reverse));
     margin-right: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .msm\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+  .msm\:space-y-0> :not([hidden])~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
-  .msm\:space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  .msm\:space-y-2> :not([hidden])~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
@@ -7079,25 +7125,25 @@ textarea.form-control.is-invalid {
     justify-content: space-between;
   }
 
-  .sm\:space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  .sm\:space-x-2> :not([hidden])~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-left: calc(0.5rem * var(--tw-space-x-reverse));
     margin-right: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .sm\:space-x-1 > :not([hidden]) ~ :not([hidden]) {
+  .sm\:space-x-1> :not([hidden])~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-left: calc(0.25rem * var(--tw-space-x-reverse));
     margin-right: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .sm\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+  .sm\:space-y-0> :not([hidden])~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
-  .sm\:space-x-5 > :not([hidden]) ~ :not([hidden]) {
+  .sm\:space-x-5> :not([hidden])~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-left: calc(1.25rem * var(--tw-space-x-reverse));
     margin-right: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
@@ -7385,25 +7431,25 @@ textarea.form-control.is-invalid {
     flex-direction: column;
   }
 
-  .md\:space-x-5 > :not([hidden]) ~ :not([hidden]) {
+  .md\:space-x-5> :not([hidden])~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-left: calc(1.25rem * var(--tw-space-x-reverse));
     margin-right: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+  .md\:space-y-0> :not([hidden])~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
-  .md\:-space-x-3 > :not([hidden]) ~ :not([hidden]) {
+  .md\:-space-x-3> :not([hidden])~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-left: calc(-0.75rem * var(--tw-space-x-reverse));
     margin-right: calc(-0.75rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .md\:space-x-1 > :not([hidden]) ~ :not([hidden]) {
+  .md\:space-x-1> :not([hidden])~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-left: calc(0.25rem * var(--tw-space-x-reverse));
     margin-right: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
@@ -7629,31 +7675,31 @@ textarea.form-control.is-invalid {
     flex-wrap: wrap;
   }
 
-  .xmd\:space-x-5 > :not([hidden]) ~ :not([hidden]) {
+  .xmd\:space-x-5> :not([hidden])~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-left: calc(1.25rem * var(--tw-space-x-reverse));
     margin-right: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .xmd\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+  .xmd\:space-y-0> :not([hidden])~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
-  .xmd\:space-x-0 > :not([hidden]) ~ :not([hidden]) {
+  .xmd\:space-x-0> :not([hidden])~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-left: calc(0px * var(--tw-space-x-reverse));
     margin-right: calc(0px * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .xmd\:space-y-1 > :not([hidden]) ~ :not([hidden]) {
+  .xmd\:space-y-1> :not([hidden])~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
   }
 
-  .xmd\:space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  .xmd\:space-y-3> :not([hidden])~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
@@ -7793,13 +7839,13 @@ textarea.form-control.is-invalid {
     flex-wrap: nowrap;
   }
 
-  .xxmd\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+  .xxmd\:space-y-0> :not([hidden])~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
-  .xxmd\:space-x-3 > :not([hidden]) ~ :not([hidden]) {
+  .xxmd\:space-x-3> :not([hidden])~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-left: calc(0.75rem * var(--tw-space-x-reverse));
     margin-right: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
@@ -8057,31 +8103,31 @@ textarea.form-control.is-invalid {
     flex-direction: column;
   }
 
-  .lg\:space-x-5 > :not([hidden]) ~ :not([hidden]) {
+  .lg\:space-x-5> :not([hidden])~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-left: calc(1.25rem * var(--tw-space-x-reverse));
     margin-right: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+  .lg\:space-y-0> :not([hidden])~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
-  .lg\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
+  .lg\:space-x-10> :not([hidden])~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-left: calc(2.5rem * var(--tw-space-x-reverse));
     margin-right: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .lg\:space-x-0 > :not([hidden]) ~ :not([hidden]) {
+  .lg\:space-x-0> :not([hidden])~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-left: calc(0px * var(--tw-space-x-reverse));
     margin-right: calc(0px * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .lg\:space-y-1 > :not([hidden]) ~ :not([hidden]) {
+  .lg\:space-y-1> :not([hidden])~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
@@ -8363,19 +8409,19 @@ textarea.form-control.is-invalid {
     flex-direction: column;
   }
 
-  .xlg\:space-x-5 > :not([hidden]) ~ :not([hidden]) {
+  .xlg\:space-x-5> :not([hidden])~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-left: calc(1.25rem * var(--tw-space-x-reverse));
     margin-right: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .xlg\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+  .xlg\:space-y-0> :not([hidden])~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
-  .xlg\:space-x-1 > :not([hidden]) ~ :not([hidden]) {
+  .xlg\:space-x-1> :not([hidden])~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-left: calc(0.25rem * var(--tw-space-x-reverse));
     margin-right: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
@@ -8608,19 +8654,19 @@ textarea.form-control.is-invalid {
     flex-direction: column;
   }
 
-  .xl\:space-x-5 > :not([hidden]) ~ :not([hidden]) {
+  .xl\:space-x-5> :not([hidden])~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-left: calc(1.25rem * var(--tw-space-x-reverse));
     margin-right: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .xl\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+  .xl\:space-y-0> :not([hidden])~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
-  .xl\:space-x-1 > :not([hidden]) ~ :not([hidden]) {
+  .xl\:space-x-1> :not([hidden])~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-left: calc(0.25rem * var(--tw-space-x-reverse));
     margin-right: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
@@ -8933,19 +8979,19 @@ textarea.form-control.is-invalid {
     flex-direction: column;
   }
 
-  .\32xl\:space-x-5 > :not([hidden]) ~ :not([hidden]) {
+  .\32xl\:space-x-5> :not([hidden])~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-left: calc(1.25rem * var(--tw-space-x-reverse));
     margin-right: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .\32xl\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+  .\32xl\:space-y-0> :not([hidden])~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
-  .\32xl\:space-x-1 > :not([hidden]) ~ :not([hidden]) {
+  .\32xl\:space-x-1> :not([hidden])~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-left: calc(0.25rem * var(--tw-space-x-reverse));
     margin-right: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));

@@ -1,13 +1,19 @@
+
 <nav class="border-gray-200 sm:px-4 py-2.5 rounded border-b border-slate">
     <div class="msm:mx-0 xsm:mx-0 xxsm:mx-0 xlg:mx-20 2xl:mx-20">
         <div class="flex flex-wrap items-center justify-between mx-auto">
+            
             <a href="{{ url('/') }}" class="flex items-center ml-2">
                 @if($setting->company_logo && file_exists(public_path('images/upload/'.$setting->company_logo)))
-                    <img src="{{$setting->logo}}" class="h-6 mr-3" alt="Doctro Logo" style="height: 5.54rem"/>
+                    <img src="{{$setting->logo}}" class="h-6 mr-3" alt="Doctro Logo" 
+                      style="height: {{ $setting->nav_height }}px;" 
+                   
+                    />
                 @else
                     <img src="{{url('/images/upload_empty/logo_black.png')}}" class="h-6 mr-3 sm:h-9" alt="Doctro Logo" />
                 @endif
             </a>
+
             <div class="flex items-center md:order-2">
                 @php
                 if (Auth::check()){

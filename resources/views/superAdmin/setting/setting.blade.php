@@ -118,6 +118,31 @@
                                         @enderror
                                     </div>
                                 </div>
+                                    {{-- Newly added on 26.9.2021 --}}
+                                <div class="row mt-5">
+                                    <div class="col-md-4 form-group">
+                                        <label for="nav_height" class="col-form-label"> {{__('Adjust Height of the Header Logo')}}</label>
+                                        <input type="number" min="1" required name="nav_height" value="{{ $setting->nav_height }}" class="form-control @error('nav_height') is-invalid @enderror">
+                                        @error('nav_height')
+                                        <div class="invalid-feedback">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                    <div class="col-md-4 form-group">
+                                        <label for="footer_logo_height" class="col-form-label"> {{__('Adjust Height of the Footer Logo')}}</label>
+                                        <input type="number" min="1" required name="footer_logo_height" value="{{ $setting->footer_logo_height }}" class="form-control @error('footer_logo_height') is-invalid @enderror">
+                                        @error('footer_logo_height')
+                                        <div class="invalid-feedback">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                    <div class="col-md-4 form-group">
+                                        <label for="signup_logo_height" class="col-form-label"> {{__('Adjust the Height of Logos on the Sign-Up Page')}}</label>
+                                        <input type="number" min="1" required name="signup_logo_height" value="{{ $setting->signup_logo_height }}" class="form-control @error('signup_logo_height') is-invalid @enderror">
+                                        @error('signup_logo_height')
+                                        <div class="invalid-feedback">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                </div>
+     {{-- End  Newly added on 26.9.2021 --}}
                                 <div class="row mt-5">
                                     <div class="col-md-6 form-group">
                                         <label for="app_id" class="col-form-label"> {{__('Admin Color')}}</label>

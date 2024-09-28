@@ -26,6 +26,9 @@
         --site_color : <?php echo $setting->website_color; ?>;
         --site_color_hover : <?php echo $setting->website_color.'e8'; ?>;
     }
+
+   
+
 </style>
 
 @if (session('direction') == 'rtl')

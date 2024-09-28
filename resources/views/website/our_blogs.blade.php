@@ -4,7 +4,7 @@
 <div class="pt-14 border-b border-white-light mb-10 pb-10">
     <h1 class="font-fira-sans font-semibold text-5xl text-center leading-10">{{__('Our Blogs ')}}</h1>
     <div class="p-5">
-        <p class="font-fira-sans font-normal text-lg text-center leading-5 text-gray">{{__('Lorem ipsum dolor sit amet,ng elit.')}}</p>
+        {{-- <p class="font-fira-sans font-normal text-lg text-center leading-5 text-gray">{{__('Lorem ipsum dolor sit amet,ng elit.')}}</p> --}}
     </div>
     <form id="searchForm" method="post" action="{{ url('our_blogs') }}">
         @csrf

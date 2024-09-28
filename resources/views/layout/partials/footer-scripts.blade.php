@@ -1,3 +1,17 @@
+
+ <div id="preloader"></div>
+
+    <script>
+        /**
+         * Preloader
+         */
+        const preloader = document.querySelector('#preloader');
+        window.addEventListener('load', () => {
+            // preloader.remove();
+            document.body.style.visibility = 'visible'; // Show body content after load
+        });
+    </script>
+</script>
 <script src="{{ url('assets/js/bootstrap.bundle.min.js') }}"></script>
 <script src="{{ url('assets/js/jquery.min.js') }}"></script>
 <script src="{{ url('assets/js/boxicons.js') }}"></script>

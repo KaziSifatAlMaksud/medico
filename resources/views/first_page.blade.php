@@ -287,8 +287,8 @@
         <section id="banner">
             <div class="inner">
                 <header>
-                    <h1>Welcome to Doctro</h1>
-                    <p>Thank you for purchasing Doctro<br />get your installation key and install database</p>
+                    <h1>Welcome to HealCertify</h1>
+                    <p>Thank you for purchasing HealCertify<br />get your installation key and install database</p>
                 </header>
                 <a href="{{ url('/installer') }}" class="button big scrolly">Installer</a>
             </div>

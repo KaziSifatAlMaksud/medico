@@ -5,7 +5,7 @@
     @php
     $setting = App\Models\Setting::first();
     @endphp
-    <title>{{$setting->business_name}}</title>
+    <title>{{$setting->business_name}} - </title>
     <link rel="shortcut icon" type="image/x-icon" href="{{$setting->favicon}}">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,6 +33,41 @@
             --site_color_hover: <?php echo $setting->website_color . '70';
                                 ?>;
         }
+         /*--------------------------------------------------------------
+    # Preloader
+    --------------------------------------------------------------*/
+        #preloader {
+            position: fixed;
+            inset: 0;
+            z-index: 999999;
+            overflow: hidden;
+            background: #fff;
+        }
+
+        #preloader:before {
+            content: "";
+            position: fixed;
+            top: calc(50% - 30px);
+            left: calc(50% - 30px);
+            border: 6px solid #fff;
+            border-color: #5fb577 transparent #5fb577 transparent;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: animate-preloader 1.5s linear infinite;
+        }
+
+        @keyframes animate-preloader {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    /*--------------------------------------------------------------
+    # Preloader end
+    --------------------------------------------------------------*/
     </style>
 </head>
 
@@ -43,7 +78,17 @@
     @else
 
     <body>
+    <div id="preloader"></div>
+
+    <script>
+        const preloader = document.querySelector('#preloader');
+        window.addEventListener('load', () => {
+            preloader.remove();
+            document.body.style.visibility = 'visible'; // Show body content after load
+        });
+    </script>
         @endif
+        
         @include('layout.partials.navbar_website')
 
         @if(auth()->check())

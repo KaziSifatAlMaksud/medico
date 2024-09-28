@@ -7,14 +7,14 @@
         <div class="d-flex flex-wrap align-items-stretch">
             <div class="col-lg-4 col-md-6 col-12 order-lg-1 min-vh-100 order-2 bg-white">
                 <div class="p-4 m-3">
-                    @php
+                   @php
                         $app_logo = App\Models\Setting::first();
                     @endphp
                     @if(isset($app_logo->logo))
-                    <img src="{{ $app_logo->logo }}" alt="logo" width="180" class="mb-5 mt-2">
+                    <img src="{{ $app_logo->logo }}" alt="logo"  style="height: {{ $app_logo->signup_logo_height }}px; width: auto;" >
                     @else
-                    <img src="{{url('/images/upload_empty/logo_black.png')}}" alt="logo" width="180" class="mb-5 mt-2" />
-                    @endif
+                    <img src="{{url('/images/upload_empty/logo_black.png')}}" alt="logo"  style="height: {{ $setting->signup_logo_height }}px; width: auto;"  />
+                    @endif          
                     @if ($errors->any())
                         @foreach ($errors->all() as $item)
                             <div class="alert alert-danger alert-dismissible fade show" role="alert">

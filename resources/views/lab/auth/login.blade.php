@@ -11,9 +11,9 @@
             $setting = App\Models\Setting::first();
           @endphp
           @if(isset($setting->logo))
-          <img src="{{ $setting->logo }}" alt="logo" width="180" class="mb-5 mt-2">
+          <img src="{{ $setting->logo }}" alt="logo"  style="height: {{ $setting->signup_logo_height }}px; width: auto;" >
           @else
-          <img src="{{url('/images/upload_empty/logo_black.png')}}" alt="logo" width="180" class="mb-5 mt-2" />
+          <img src="{{url('/images/upload_empty/logo_black.png')}}" alt="logo"  style="height: {{ $setting->signup_logo_height }}px; width: auto;"  />
           @endif
             @if ($errors->any())
                 @foreach ($errors->all() as $item)

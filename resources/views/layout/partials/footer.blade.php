@@ -3,13 +3,22 @@
         <div class="xxsm:mx-5 xl:mx-0 2xl:mx-0">
             <div class="xxsm:pt-5 xxsm:pb-5 justify-between flex sm:flex-row xxsm:flex-col">
                 <div>
-                    <a href="{{ url('/') }}" class="">
+                     <a href="{{ url('/') }}" class="">
                         @if($setting->company_white_logo && file_exists(public_path('images/upload/'.$setting->company_white_logo)))
-                        <img src="{{ $setting->companyWhite }}" width="150px" height="40px" alt="Logo">
+                            <img 
+                                src="{{ $setting->companyWhite }}" 
+                                alt="Company Logo"
+                                style="height: {{ $setting->footer_logo_height }}px; width: auto;" 
+                            />
                         @else
-                        <img src="{{url('/images/upload_empty/logo_white.png')}}" class="h-6 mr-3 sm:h-9" alt="Doctro Logo" />
+                            <img 
+                                src="{{ asset('/images/upload_empty/logo_white.png') }}" 
+                                class="h-6 mr-3 sm:h-9" 
+                                alt="Default Logo" 
+                            />
                         @endif
                     </a>
+
                     <div class="flex pt-5">
                         <a href="{{ $setting->facebook_url }}" target="_blank" class=""><i class="fa-brands fa-facebook text-white border rounded-full p-2"></i></a>
                         <a href="{{ $setting->twitter_url }}" target="_blank" class="lg:mx-4 md:mx-2 xsm:mx-1 xxsm:mx-1"><i class="fa-brands fa-twitter text-white border rounded-full p-2"></i></a>
@@ -68,3 +77,18 @@
         </div>
     </div>
 </div>
+
+ 
+
+    {{-- <script>
+        /**
+         * Preloader
+         */
+        const preloader = document.querySelector('#preloader');
+        if (preloader) {
+            window.addEventListener('load', () => {
+                preloader.remove();
+                document.body.style.visibility = 'visible'; // Show body content after load
+            });
+        }
+    </script> --}}
