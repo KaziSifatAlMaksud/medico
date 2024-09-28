@@ -39,9 +39,36 @@
                             <div class="d-block">
                                 <label for="password" class="control-label">{{ __('Password') }}</label>
                             </div>
-                            <input id="password" type="password"
+                            <div class="input-group">
+                                <input id="password" type="password"
+                                    class="form-control @error('password') is-invalid @enderror"
+                                    name="password" tabindex="2" required>
+                                <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+                                    <i class="fas fa-eye" id="eyeIcon"></i>
+                                </button>
+                            </div>
+
+                            <script>
+                                document.getElementById('togglePassword').addEventListener('click', function () {
+                                    var passwordField = document.getElementById('password');
+                                    var eyeIcon = document.getElementById('eyeIcon');
+                                    
+                                    // Toggle password field type
+                                    if (passwordField.type === "password") {
+                                        passwordField.type = "text";
+                                        eyeIcon.classList.remove('fa-eye');
+                                        eyeIcon.classList.add('fa-eye-slash'); // Change to eye-slash
+                                    } else {
+                                        passwordField.type = "password";
+                                        eyeIcon.classList.remove('fa-eye-slash');
+                                        eyeIcon.classList.add('fa-eye'); // Change back to eye
+                                    }
+                                });
+                            </script>
+                            {{-- <input id="password" type="password"
                                 class="form-control @error('password') is-invalid @enderror" name="password" tabindex="2"
-                                required>
+                                required> --}}
+                               
                             @error('password')
                                 <div class="invalid-feedback">
                                     {{ $message }}
@@ -56,6 +83,7 @@
                             <button type="submit" class="btn btn-primary btn-lg btn-icon icon-right" tabindex="4">
                                 {{ __('Login') }}
                             </button>
+
                         </div>
                     </form>
                     <div class="mt-3 d-flex justify-content-between">
@@ -77,3 +105,5 @@
         </div>
     </section>
 @endsection
+
+

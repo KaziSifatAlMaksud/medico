@@ -7,7 +7,6 @@
                 @if($setting->company_logo && file_exists(public_path('images/upload/'.$setting->company_logo)))
                     <img src="{{$setting->logo}}" class="h-6 mr-3" alt="Doctro Logo" 
                       style="height: {{ $setting->nav_height }}px;" 
-                   
                     />
                 @else
                     <img src="{{url('/images/upload_empty/logo_black.png')}}" class="h-6 mr-3 sm:h-9" alt="Doctro Logo" />

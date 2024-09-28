@@ -154,6 +154,78 @@ class CustomController extends Controller
         return true;
     }
 
+//     public function sendOtp($user)
+// {
+//     $setting = Setting::first();
+//     $isVerificationRequire = $setting->verification;
+
+//     if ($isVerificationRequire == 1) {
+//         // Generate OTP
+//         $otp = mt_rand(1000, 9999);
+//         $user->update(['otp' => $otp]);
+
+//         // Mail notification setting
+//         $mail_notification = $setting->using_mail;
+//         $mail_content = NotificationTemplate::where('title', 'verification')->first()->mail_content;
+//         $subject = NotificationTemplate::where('title', 'verification')->first()->subject;
+
+//         // Prepare mail content
+//         $detail['user_name'] = $user->name;
+//         $detail['otp'] = $otp;
+//         $detail['app_name'] = $setting->business_name;
+//         $data = ["{{user_name}}", "{{otp}}", "{{app_name}}"];
+
+//         // If mail notification is enabled
+//         if ($mail_notification == 1) {
+//             $message1 = str_ireplace($data, $detail, $mail_content);
+            
+//             try {
+//                 // Configure mail settings dynamically
+//                 $config = array(
+//                     'driver'     => $setting->mail_mailer,
+//                     'host'       => $setting->mail_host,
+//                     'port'       => $setting->mail_port,
+//                     'from'       => array('address' => $setting->mail_from_address, 'name' => $setting->mail_from_name),
+//                     'encryption' => $setting->mail_encryption,
+//                     'username'   => $setting->mail_username,
+//                     'password'   => $setting->mail_password
+//                 );
+//                 Config::set('mail', $config);
+
+//                 // Send OTP email
+//                 Mail::to($user->email)->send(new SendMail($message1, $subject));
+//             } catch (\Throwable $th) {
+//                 // Handle any exceptions (optional)
+//             }
+//         }
+
+//         // Commenting out SMS-related code
+//         /*
+//         if ($msg_notification == 1) {
+//             $message1 = str_ireplace($data, $detail, $msg_content);
+//             $sid = $setting->twilio_acc_id;
+//             $token = $setting->twilio_auth_token;
+//             try {
+//                 $phone = $user->phone_code . $user->phone;
+//                 $message1 = str_ireplace($data, $detail, $msg_content);
+//                 $client = new Client($sid, $token);
+//                 $client->messages->create(
+//                     $phone,
+//                     array(
+//                         'from' => $setting->twilio_phone_no,
+//                         'body' => $message1
+//                     )
+//                 );
+//             } catch (\Throwable $th) {
+//                 // Handle any exceptions (optional)
+//             }
+//         }
+//         */
+
+//         return $user;
+//         }
+//     }
+
     public function sendOtp($user)
     {
         $setting = Setting::first();

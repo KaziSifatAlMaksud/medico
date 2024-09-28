@@ -328,6 +328,7 @@ Route::group(['middleware' => ['XssSanitizer']], function () {
     Route::post('/doctor/verify_doctor', [App\Http\Controllers\Doctor\DoctorController::class, 'verify_doctor']);
     Route::post('/doctor/doctor_register', [App\Http\Controllers\Doctor\DoctorController::class, 'doctor_register']);
     Route::get('/doctor/send_otp/{id}', [App\Http\Controllers\Doctor\DoctorController::class, 'send_otp']);
+    // Route::get('/doctor/send_otp_email/{id}', [App\Http\Controllers\Doctor\DoctorController::class, 'send_otp_email']);
     Route::post('/doctor/verify_otp', [App\Http\Controllers\Doctor\DoctorController::class, 'verify_otp']);
 
     Route::middleware(['auth'])->group(function () {
@@ -382,7 +383,7 @@ Route::group(['middleware' => ['XssSanitizer']], function () {
     Route::post('/verify_pharmacy', [App\Http\Controllers\Pharmacy\PharmacyController::class, 'verify_pharmacy']);
     Route::get('/pharmacy_signUp', [App\Http\Controllers\Pharmacy\PharmacyController::class, 'pharmacy_signUp']);
     Route::post('/pharmacy_register', [App\Http\Controllers\Pharmacy\PharmacyController::class, 'pharmacy_register']);
-    Route::get('/pharmacy_send_otp', [App\Http\Controllers\Pharmacy\PharmacyController::class, 'pharmacy_send_otp']);
+    // Route::get('/pharmacy_send_otp', [App\Http\Controllers\Pharmacy\PharmacyController::class, 'pharmacy_send_otp']);
     Route::post('pharmacy_verify_otp', [App\Http\Controllers\Pharmacy\PharmacyController::class, 'pharmacy_verify_otp']);
     Route::middleware(['auth'])->group(function () {
         Route::get('/pharmacy_home', [App\Http\Controllers\Pharmacy\PharmacyController::class, 'pharmacy_home']);
@@ -408,7 +409,7 @@ Route::group(['middleware' => ['XssSanitizer']], function () {
     Route::post('verify_pathologist', [LabSettingController::class, 'verify_pathologist']);
     Route::get('pathologist_sign_up', [LabSettingController::class, 'pathologist_sign_up']);
     Route::post('verify_sign_up', [LabSettingController::class, 'verify_sign_up']);
-    Route::get('pathologist_send_otp', [LabSettingController::class, 'pathologist_send_otp']);
+    // Route::get('pathologist_send_otp', [LabSettingController::class, 'pathologist_send_otp']);
     Route::post('verify_pathologist_otp', [LabSettingController::class, 'verify_pathologist_otp']);
 
     Route::middleware(['auth'])->group(function () {

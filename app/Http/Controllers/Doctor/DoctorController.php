@@ -80,6 +80,7 @@ class DoctorController extends Controller
                         return redirect()->back()->withErrors('you are disable by admin please contact admin');
                     }
                 } else {
+                  
                     return redirect('doctor/send_otp/' . $doctor->id);
                 }
             } else {
@@ -111,6 +112,23 @@ class DoctorController extends Controller
         }
     }
 
+//    public function send_otp_email($user_id)
+// {
+//     $user = User::find($user_id);
+//     $setting = Setting::first();
+
+//     if ($setting->using_mail == 1) {
+//         (new CustomController)->sendOtp($user);  // Send OTP only via email
+//         $status = 'Verification code sent to email';
+//     } else {
+//         $status = 'Email sending is disabled in settings';
+//     }
+
+//     return view('doctor.auth.send_otp', compact('user'))->with('status', $status);
+// }
+
+
+    // for sms otp varification
     public function send_otp($user_id)
     {
         $user = User::find($user_id);

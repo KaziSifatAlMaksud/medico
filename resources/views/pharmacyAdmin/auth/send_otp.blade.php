@@ -53,10 +53,10 @@
                 @php
                 $app_logo = App\Models\Setting::first();
                 @endphp
-                @if(isset($app_logo->logo))
-                <img src="{{ $app_logo->logo }}" alt="logo" width="180" class="mb-5 mt-2">
+                @if(isset($app_logo->company_logo))
+                <img src="{{ $app_logo->company_logo }}" alt="logo"  style="height: {{ $setting->nav_height }}px;"  class="mb-5 mt-2">
                 @else
-                <img src="{{url('/images/upload_empty/logo_black.png')}}" class="h-6 mr-3 sm:h-9" alt="Doctro Logo" />
+                        <img src="{{url('/images/upload_empty/logo_black.png')}}" class="h-6 mr-3 sm:h-9" alt=" Logo" />
                 @endif
                 @if (session('error'))
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
